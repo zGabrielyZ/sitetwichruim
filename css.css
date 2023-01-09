@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    height: 200%;
+
+}
+
+
+.clear{
+    clear: both;
+}
+
+header{
+    
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    
+    background-color: rgb(250, 250, 250)
+}
+
+header section.logo{
+    display: inline;
+    position: fixed;
+    width: 100%;
+    max-width: 200px;
+    height: 80px;
+    float: left;
+    /* background-color: orange; */
+    
+}
+
+header section.logo .img{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    height: 50%;
+    background-image: url(twich.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    width: 50%;
+    background-position: center;
+    cursor:pointer;
+    
+}
+header section.logo a{
+    position: absolute;
+    top: 24px;
+    font-size: 24px;
+    text-decoration: none;
+    color:black;
+}
+
+header section.logo a:hover{
+    color: rgb(45, 45, 158);
+}
+
+header section.logo p{
+    position: relative;
+    bottom:75%;
+    left: 95%;
+    margin-bottom: -25px;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+header section.cadastro-login{
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    float: right;
+    /* background-color: green; */
+    margin-right: 10px;
+}
+header section.cadastro-login form{
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+    margin: 20px 0;
+}
+
+header section.cadastro-login form input[type=submit]{
+   margin: 4px 10px;
+   border: 0;
+   border-radius: 10px;
+   width: 125px;
+   height: 80%;
+   cursor: pointer;
+   transition: 1s;
+}
+
+header section.cadastro-login form input[type=submit]:hover{
+    background-color:rgb(45, 45, 158);
+    color: white;
+}
+
+
+
+header section.search{
+    
+    position: absolute;
+    bottom: 20%;
+    left: 45%;
+    transform: rotateY(-50%);
+    width: 100%;
+    max-width: 400px;
+    height: 70%;
+    /* background-color: black; */
+}
+
+header section.search form{
+    display: inline-block;
+    
+    margin: 10px 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+header section.search form input[type=text]{
+    width: 85%;
+    height: 35px;
+    line-height: 35px;
+    padding-left:10px;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+header section.search form input[type=submit]{
+    position: relative;
+    border-collapse: collapse;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-image: url(lupa.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: white;
+    color: transparent;
+} 
+
+
+main{
+    
+    display: flex;
+    flex-direction: row;
+    height:calc(100% - 80px) ;
+    width: 100%;
+    background-color: red;
+}
+
+main section{
+    position: fixed;
+    top: 80px;
+    height:calc(100% - 80px) ;
+    background-color: rgb(220, 220, 220);
+    width: 10%;
+    
+}
+
+
+main section nav{
+    
+    height: 100%;
+    margin-top: 10px;
+}
+
+main section nav div.font-size {
+    position: relative;
+    left: 7.5px;
+    
+    width: 80%;
+    height: 80px;
+}
+main section nav div.font-size h2{
+    color: black;
+    font-size: 15px;
+    font-weight: normal;
+    white-space: pre;
+    padding-top: 10px;
+}
+
+
+
+main section nav div.img{
+height: 50px;
+width: 100%;
+/* background-color: green; */
+    
+}
+main section nav div.img nav{
+
+margin-bottom: 30px;
+    
+}
+
+main section nav div.img nav span.imagem img {
+    width: 30%;
+    height: 100%;
+    border-radius: 50%;
+    background-size: 30%;
+    
+    
+}
+
+
+main section nav div.img nav span.text{
+   position: relative;;
+   bottom: 20px;
+   padding-left: 10px;
+   color: black;
+}
+
+
+
+main footer{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    top: 92.5%;
+}
+
+@media screen and (max-width:1880px) {
+    main section nav div.font-size h2{
+        white-space: pre-wrap;
+    }
+}
+
+
+@media screen and (max-width:1300px) {
+
+
+
+
+    main section nav div.font-size h2{
+        font-size: 12px;
+        word-wrap: break-word;
+    }
+}
+
+
+
+@media screen and (max-width:1280px) {
+    header section.cadastro-login{
+        position: relative;
+        bottom: 20px;
+        right:20px;
+        width: 100%;
+        max-width: 100px;
+        height: 100%;
+        
+    }
+    header section.cadastro-login form{
+        
+        width: 100%;
+        height: 100%;
+    }
+    
+    header section.cadastro-login form input[type=submit]{
+        font-size: 12px;
+        width: 60px;
+        height: 40%;
+     }
+}
+
+@media screen and (max-width:1110px) {
+    header section.search form input[type=text]{
+       width: 50%;
+        
+    }
+    
+}
+
+@media screen and (max-width:905px) {
+  
+    main section nav div.img span.text{
+        font-size: 11px;
+        position: relative;
+        left: 3px;
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    header section.search{
+        width: 20px;
+    }
+       header section.search form input[type=text]{
+       display: none;
+        
+    }
+}
+
